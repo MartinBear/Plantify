@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+/*bakgrund*/
+hmtl, body{
+      background: #333;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: auto;
+      /*justify-content: center;*/
+}
+/* header*/
+header.myHead{
+    align-content: center;
+    padding: 0.5em;
+    color: black;
+    background-color: seagreen;
+    clear: left;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+/* fönstret med allt innehåll på sidan som inte är header*/
+section.secbox{
+    opacity: 0.6;
+    display: block;
+    margin: 6em;
+    padding: 4em;
+    background-color: #80BDF7;
+    height: auto;
+    width: auto;
+}
+
+
+/*placering och sizing av logga*/
+img{
+    display: block;
+    float: left;
+    position: absolute;
+    height: 7em;
+}
+
+/*samma som nedan fast anpassat som header text*/
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+} 
+/* bestämmer font family och färg bla*/
+h2, h3{
+    color: black;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+}
+
+/* -------------Navbar-----------------*/
+/* hur listan (navbaren) ska se ut*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+/*lägg dig åt höger*/
+ul.topnav li {float: left;}
+
+/* styling för navbar */
+ul.topnav li a {
+    display: block;
+    color: #80BDF7;
+    text-align: center;
+    padding: 0.9em 1em;
+    text-decoration: none;
+}
+/* vilken färg navbarens meny, inaktivt val*/
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+/* samma fast aktivt val*/
+ul.topnav li a.active {background-color: black;}
+/* go right!*/
+ul.topnav li.right {float: right;}
+
+/*Responsiv*/
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+/*paragrafer och hur texten ska se ut */
+p{  font-size: 1.5em;
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    text-align: center;
+}
+
+/* CSS för table och kontakt formen*/
+/* th blir för de 3 paketen*/
+/* td är för alternativen som ingår i paketen som tex Standard*/
+td, th{
+    border: 1px solid black;
+    display: table-cell;
+}
+/*styling för hela tabellen*/
+table{
+    background-color: #333;
+    color: #80BDF7;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    display: table;
+    border-spacing: 0.5em;
+    border: 1em solid black;
+}
+/*styling för contact form*/
+input[type=text]{
+    width: auto;
+    padding: 0.9em 1.2em;
+    margin: 0.6em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+}
+/*                                  */
+/* all text i listorna */
+li{
+    font-size: 1.3em;
+    font-family: 'Indie Flower', cursive;
+}
